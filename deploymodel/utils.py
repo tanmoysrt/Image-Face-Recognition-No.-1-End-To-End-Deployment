@@ -13,7 +13,7 @@ eye_cascade = cv2.CascadeClassifier(
     str(BASE_DIR)+"/deploymodel"+'/haarcascade_eye.xml')
 model_location = str(BASE_DIR)+"/deploymodel"+'/saved_model.pkl'
 model = joblib.load(model_location)
-with open(str(BASE_DIR)+"/deploymodel"+"./celebrity_key_dict.json") as f:
+with open(str(BASE_DIR)+"/deploymodel"+"/celebrity_key_dict.json") as f:
     celebrities_dic = json.load(f)
 
 
