@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predict</title>
+  </head>
+  <body>
+    {% if message %} {% autoescape off %}
+    <h3>Predicted Character is {{ message }}</h3>
+    <img src="data:image/png;base64,{{ image }}" height="100px" />
+    {% endautoescape %} {% endif %}
+
+    <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <a>File : </a>
+      <input type="file" name="file" required />
+      <button type="submit">Let's Predict</button>
+    </form>
+    <p>Available Characters (82% Accuracy) :</p>
+    <ul>
+      <li>lionel_messi</li>
+      <li>maria_sharapova</li>
+      <li>roger_federer</li>
+      <li>serena_williams</li>
+      <li>virat_kohli</li>
+    </ul>
+  </body>
+</html>

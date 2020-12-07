@@ -1,0 +1,1 @@
+web: gunicorn slient.wsgi --log-file -

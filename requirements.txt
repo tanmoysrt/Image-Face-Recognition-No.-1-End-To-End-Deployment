@@ -1,0 +1,11 @@
+Django==3.1
+sqlparse==0.4.1
+Pillow
+gunicorn
+whitenoise
+requests
+joblib
+numpy
+pandas
+opencv-python
+PyWavelets
