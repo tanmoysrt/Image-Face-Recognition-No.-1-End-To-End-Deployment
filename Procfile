@@ -1,1 +1,1 @@
-web: gunicorn slient.wsgi --log-file -
+web: gunicorn deployment.wsgi --log-file -
