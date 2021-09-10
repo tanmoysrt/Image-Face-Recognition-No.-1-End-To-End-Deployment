@@ -1,5 +1,5 @@
 Django==3.1
-sqlparse==0.4.1
+sqlparse==0.4.2
 Pillow
 gunicorn
 whitenoise
